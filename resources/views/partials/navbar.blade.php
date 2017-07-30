@@ -12,8 +12,8 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="{{route('home')}}">Home</a></li>
-            <li><a href="{{route('about')}}">About</a></li>
+            <li class="{{set_active_route('home')}}"><a  href="{{route('home')}}">Home</a></li>
+            <li class="{{set_active_route('about')}}"><a  href="{{route('about')}}">About</a></li>
             <li><a href="#contact">Artisans</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Planet<span class="caret"></span></a>
@@ -26,11 +26,11 @@
                 <li><a href="#">Larachat</a></li>
               </ul>
             </li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="{{set_active_route('contact')}}"><a href="#contact">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#contact">Login</a></li>
-            <li><a href="#contact">Register</a></li>
+            <li class="{{set_active_route('login')}}"><a href="#contact">Login</a></li>
+            <li class="{{set_active_route('register')}}"><a href="#contact">Register</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
