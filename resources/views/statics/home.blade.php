@@ -1,4 +1,4 @@
-@extends('layouts.master',['pageTitle'=>'Laracarte'])
+@extends('layouts.master',['pageTitle'=>'Home'])
 @section('content')
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
