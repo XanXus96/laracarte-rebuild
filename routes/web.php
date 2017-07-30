@@ -1,5 +1,6 @@
 <?php
 
+use App\Mail\Messagecreated;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +17,10 @@ Route::get('/', 'StaticController@home')->name('home');
 Route::get('/about', 'StaticController@about')->name('about');
 
 Route::get('/contact', 'ContactController@create')->name('contact');
+
+Route::post('/contact', 'ContactController@store')->name('contact');
+
+Route::get('/message', function(){
+
+	new Messagecreated('marouane kafou','kafou88@gmail.com','hohohohohoho hahahahah hihihihihi huhuhuhuhu hyhyhyhyhy');
+});
