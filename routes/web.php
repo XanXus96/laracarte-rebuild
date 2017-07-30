@@ -14,3 +14,5 @@
 Route::get('/', 'StaticController@home')->name('home');
 
 Route::get('/about', 'StaticController@about')->name('about');
+
+Route::get('/contact', 'ContactController@create')->name('contact');
